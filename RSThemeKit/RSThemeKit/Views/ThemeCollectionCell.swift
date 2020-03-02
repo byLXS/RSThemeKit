@@ -1,6 +1,6 @@
 import UIKit
 
-public class ThemeCollectionCell: UICollectionViewCell {
+open class ThemeCollectionCell: UICollectionViewCell {
     
     override public func awakeFromNib() {
         super.awakeFromNib()

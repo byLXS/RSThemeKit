@@ -1,6 +1,6 @@
 import UIKit
 
-public class ThemeTabBarController: UITabBarController {
+open class ThemeTabBarController: UITabBarController {
     
     override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

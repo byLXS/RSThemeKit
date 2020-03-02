@@ -1,6 +1,6 @@
 import UIKit
 
-public class ThemeNavigationController: UINavigationController {
+open class ThemeNavigationController: UINavigationController {
     
     override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

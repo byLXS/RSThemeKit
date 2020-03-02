@@ -1,6 +1,6 @@
 import UIKit
 
-public class ThemeViewController: UIViewController {
+open class ThemeViewController: UIViewController {
     
     var current = UIStatusBarStyle.default
     

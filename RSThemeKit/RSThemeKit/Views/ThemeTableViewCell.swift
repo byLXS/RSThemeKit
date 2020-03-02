@@ -1,6 +1,6 @@
 import UIKit
 
-public class ThemeTableCell: UITableViewCell {
+open class ThemeTableCell: UITableViewCell {
 
     override public func awakeFromNib() {
         super.awakeFromNib()
