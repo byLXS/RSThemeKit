@@ -23,7 +23,7 @@ public enum ThemeType {
             theme?.identifier = "custom"
             self = .custom(theme: theme)
         default:
-            self = .light
+            self = .system
         }
     }
     

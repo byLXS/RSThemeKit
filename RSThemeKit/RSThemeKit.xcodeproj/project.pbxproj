@@ -15,8 +15,8 @@
 		E142879C240C596600D15B0E /* ThemeModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1428786240C596500D15B0E /* ThemeModel+Extensions.swift */; };
 		E142879D240C596600D15B0E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1428787240C596500D15B0E /* UIColor+Extensions.swift */; };
 		E142879E240C596600D15B0E /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1428788240C596500D15B0E /* UserDefaults+Extensions.swift */; };
-		E142879F240C596600D15B0E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E142878A240C596600D15B0E /* Colors.xcassets */; };
-		E14287A0240C596600D15B0E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E142878B240C596600D15B0E /* Media.xcassets */; };
+		E142879F240C596600D15B0E /* RSColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E142878A240C596600D15B0E /* RSColors.xcassets */; };
+		E14287A0240C596600D15B0E /* RSMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E142878B240C596600D15B0E /* RSMedia.xcassets */; };
 		E14287A1240C596600D15B0E /* ThemeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142878D240C596600D15B0E /* ThemeCollectionCell.swift */; };
 		E14287A2240C596600D15B0E /* ThemeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142878E240C596600D15B0E /* ThemeCollectionView.swift */; };
 		E14287A3240C596600D15B0E /* ThemeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142878F240C596600D15B0E /* ThemeNavigationController.swift */; };
@@ -39,8 +39,8 @@
 		E1428786240C596500D15B0E /* ThemeModel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeModel+Extensions.swift"; sourceTree = "<group>"; };
 		E1428787240C596500D15B0E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		E1428788240C596500D15B0E /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
-		E142878A240C596600D15B0E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		E142878B240C596600D15B0E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		E142878A240C596600D15B0E /* RSColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RSColors.xcassets; sourceTree = "<group>"; };
+		E142878B240C596600D15B0E /* RSMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RSMedia.xcassets; sourceTree = "<group>"; };
 		E142878D240C596600D15B0E /* ThemeCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCollectionCell.swift; sourceTree = "<group>"; };
 		E142878E240C596600D15B0E /* ThemeCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCollectionView.swift; sourceTree = "<group>"; };
 		E142878F240C596600D15B0E /* ThemeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeNavigationController.swift; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 		E1428789240C596600D15B0E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				E142878A240C596600D15B0E /* Colors.xcassets */,
-				E142878B240C596600D15B0E /* Media.xcassets */,
+				E142878A240C596600D15B0E /* RSColors.xcassets */,
+				E142878B240C596600D15B0E /* RSMedia.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -192,6 +192,9 @@
 		E142876C240C595700D15B0E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Robert;
 				TargetAttributes = {
@@ -222,8 +225,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E14287A0240C596600D15B0E /* Media.xcassets in Resources */,
-				E142879F240C596600D15B0E /* Colors.xcassets in Resources */,
+				E14287A0240C596600D15B0E /* RSMedia.xcassets in Resources */,
+				E142879F240C596600D15B0E /* RSColors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

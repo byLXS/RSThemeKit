@@ -11,6 +11,9 @@
   },
   "properties" : {
     "template-rendering-intent" : "template",
+    "on-demand-resource-tags" : [
+      "New"
+    ],
     "preserves-vector-representation" : true
   }
 }

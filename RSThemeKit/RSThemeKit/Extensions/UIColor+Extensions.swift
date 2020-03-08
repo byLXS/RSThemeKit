@@ -1,10 +1,12 @@
 import UIKit
 
+let RSBundle = Bundle(identifier: "rs.RSThemeKit")!
+
 extension UIColor {
     
     static var systemTextColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "textColor") ?? darkColor
+            return UIColor(named: "textColor", in: RSBundle, compatibleWith: nil) ?? darkColor
         }
         
         return darkColor
@@ -12,7 +14,7 @@ extension UIColor {
     
     static var systemTintColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "tintColor") ?? blueLightColor
+            return UIColor(named: "tintColor", in: RSBundle, compatibleWith: nil) ?? blueLightColor
         }
         
         return blueLightColor
@@ -20,7 +22,7 @@ extension UIColor {
     
     static var systemBackgroundColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "backgroundColor") ?? whiteColor
+            return UIColor(named: "backgroundColor", in: RSBundle, compatibleWith: nil) ?? whiteColor
         }
         
         return whiteColor
@@ -28,7 +30,7 @@ extension UIColor {
     
     static var systemAccessoryTypeViewColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "accessoryTypeViewColor") ?? gray2LightColor
+            return UIColor(named: "accessoryTypeViewColor", in: RSBundle, compatibleWith: nil) ?? gray2LightColor
         }
         
          return gray2LightColor
@@ -36,21 +38,22 @@ extension UIColor {
     
     static var systemCellBackgroundColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "cellBackgroundColor") ?? gray6LightColor
+            
+            return UIColor(named: "cellBackgroundColor", in: RSBundle, compatibleWith: nil) ?? gray6LightColor
         }
         
         return gray6LightColor
     }
     static var systemDetailtTextColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "detailtTextColor") ?? gray2LightColor
+            return UIColor(named: "detailtTextColor", in: RSBundle, compatibleWith: nil) ?? gray2LightColor
         }
         
         return gray2LightColor
     }
     static var systemNavigationBarColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "navigationBarColor") ?? gray6NavigationLightColor
+            return UIColor(named: "navigationBarColor", in: RSBundle, compatibleWith: nil) ?? gray6NavigationLightColor
         }
         
         return gray6NavigationLightColor
@@ -58,7 +61,7 @@ extension UIColor {
     
     static var systemSelectionStyleColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "selectionStyleColor") ?? gray5LightTheme
+            return UIColor(named: "selectionStyleColor", in: RSBundle, compatibleWith: nil) ?? gray5LightTheme
         }
         
         return gray5LightTheme
@@ -66,7 +69,7 @@ extension UIColor {
     
     static var systemSwitchBackgroundColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "switchBackgroundColor") ?? gray4LightColor
+            return UIColor(named: "switchBackgroundColor", in: RSBundle, compatibleWith: nil) ?? gray4LightColor
         }
         
         return gray4LightColor
@@ -74,7 +77,7 @@ extension UIColor {
     
     static var systemSwitchTintColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "switchTintColor") ?? greenLightColor
+            return UIColor(named: "switchTintColor", in: RSBundle, compatibleWith: nil) ?? greenLightColor
         }
         
         return greenLightColor
@@ -82,7 +85,7 @@ extension UIColor {
     
     static var systemTableViewColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "tableViewColor") ?? gray6NavigationLightColor
+            return UIColor(named: "tableViewColor", in: RSBundle, compatibleWith: nil) ?? gray6NavigationLightColor
         }
         
         return gray6NavigationLightColor
@@ -90,7 +93,7 @@ extension UIColor {
     
     static var systemSeparatorColor: UIColor {
         if #available(iOS 13.0, *) {
-            return UIColor(named: "separatorColor") ?? gray3LightColor
+            return UIColor(named: "separatorColor", in: RSBundle, compatibleWith: nil) ?? gray3LightColor
         }
         
         return gray3LightColor

@@ -11,7 +11,7 @@ public class ThemeManager {
     }
     
     static public var currentTheme: ThemeModel {
-        guard let identifier = UserDefaults.standard.string(forKey: themeIndexKey) else { return ThemeType("light").getThemeModel() }
+        guard let identifier = UserDefaults.standard.string(forKey: themeIndexKey) else { return ThemeType("system").getThemeModel() }
         
         let type = ThemeType(identifier)
         
