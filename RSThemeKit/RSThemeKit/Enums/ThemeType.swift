@@ -8,7 +8,7 @@ public enum ThemeType {
     case system
     case custom(theme: ThemeModel?)
     
-    init(_ identifier: String) {
+    public init(_ identifier: String) {
         switch identifier {
         case "light":
             self = .light
