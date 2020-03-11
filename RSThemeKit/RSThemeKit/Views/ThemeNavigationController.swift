@@ -24,7 +24,7 @@ open class ThemeNavigationController: UINavigationController {
         decorator(theme: ThemeManager.currentTheme)
     }
     
-    public func decorator(theme: ThemeModel) {
+    open func decorator(theme: ThemeModel) {
         navigationBar.tintColor = theme.tintColor
         navigationBar.barTintColor = theme.navigationBarColor
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: theme.textColor]

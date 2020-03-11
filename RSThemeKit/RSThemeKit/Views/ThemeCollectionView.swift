@@ -16,7 +16,7 @@ open class ThemeCollectionView: UICollectionView {
         decorator(theme: ThemeManager.currentTheme)
     }
     
-    public func decorator(theme: ThemeModel) {
+    open func decorator(theme: ThemeModel) {
         backgroundColor = theme.tableViewColor
         indicatorStyle = theme.indicatorStyle
     }

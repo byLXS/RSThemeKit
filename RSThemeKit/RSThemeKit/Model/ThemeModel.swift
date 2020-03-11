@@ -15,7 +15,7 @@ public struct ThemeModel {
     public let statusBarStyle: UIStatusBarStyle
     public let indicatorStyle: UIScrollView.IndicatorStyle
     public let selectionStyleColor: UIColor
-    let accessoryTypeViewColor: UIColor
+    public let accessoryTypeViewColor: UIColor
     public let switchBackgroundColor: UIColor
     public let keyboardAppearance: UIKeyboardAppearance
     

@@ -16,7 +16,7 @@ open class ThemeTableView: UITableView {
         decorator(theme: ThemeManager.currentTheme)
     }
   
-    public func decorator(theme: ThemeModel) {
+    open func decorator(theme: ThemeModel) {
         backgroundColor = theme.tableViewColor
         separatorColor = theme.separatorColor
         indicatorStyle = theme.indicatorStyle

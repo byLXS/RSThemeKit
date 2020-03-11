@@ -31,7 +31,7 @@ open class ThemeViewController: UIViewController {
         decorator(theme: ThemeManager.currentTheme)
     }
     
-    public func decorator(theme: ThemeModel) {
+    open func decorator(theme: ThemeModel) {
         view.backgroundColor = theme.backgroundColor
         current = theme.statusBarStyle
         setNeedsStatusBarAppearanceUpdate()

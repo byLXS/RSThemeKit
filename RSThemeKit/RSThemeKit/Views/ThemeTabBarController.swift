@@ -16,7 +16,7 @@ open class ThemeTabBarController: UITabBarController {
         decorator(theme: ThemeManager.currentTheme)
     }
     
-    public func decorator(theme: ThemeModel) {
+    open func decorator(theme: ThemeModel) {
         tabBar.barTintColor = theme.backgroundColor
         tabBar.tintColor = theme.tintColor
     }

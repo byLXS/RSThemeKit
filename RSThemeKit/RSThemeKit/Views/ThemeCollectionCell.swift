@@ -16,7 +16,7 @@ open class ThemeCollectionCell: UICollectionViewCell {
         decorator(theme: ThemeManager.currentTheme)
     }
     
-    public func decorator(theme: ThemeModel) {
+    open func decorator(theme: ThemeModel) {
         backgroundColor = theme.cellBackgroundColor
     }
     

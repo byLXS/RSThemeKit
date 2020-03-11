@@ -16,7 +16,7 @@ open class ThemeTableCell: UITableViewCell {
         decorator(theme: ThemeManager.currentTheme)
     }
     
-    public func decorator(theme: ThemeModel) {
+    open func decorator(theme: ThemeModel) {
         backgroundColor = theme.cellBackgroundColor
         textLabel?.textColor = theme.textColor
         textLabel?.backgroundColor = .clear
