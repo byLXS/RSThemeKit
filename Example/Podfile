@@ -1,0 +1,6 @@
+target 'Example' do
+  use_frameworks!
+
+  pod 'RSThemeKit'
+ 
+end

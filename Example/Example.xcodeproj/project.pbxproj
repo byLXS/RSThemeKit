@@ -13,25 +13,9 @@
 		FA48BDEC241902950047726B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA48BDEA241902950047726B /* Main.storyboard */; };
 		FA48BDEE241902960047726B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA48BDED241902960047726B /* Assets.xcassets */; };
 		FA48BDF1241902960047726B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA48BDEF241902960047726B /* LaunchScreen.storyboard */; };
-		FA99308F241906ED00E08BB0 /* RSThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA99308E241906ED00E08BB0 /* RSThemeKit.framework */; };
-		FA993090241906ED00E08BB0 /* RSThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA99308E241906ED00E08BB0 /* RSThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA9930942419072C00E08BB0 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9930922419072C00E08BB0 /* SwitchCell.xib */; };
 		FA9930952419072C00E08BB0 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9930932419072C00E08BB0 /* SwitchCell.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FA993091241906ED00E08BB0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FA993090241906ED00E08BB0 /* RSThemeKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1CC01561BFAB6EA59DC8FF6C /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -54,7 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA99308F241906ED00E08BB0 /* RSThemeKit.framework in Frameworks */,
 				3F08CE857D400761855C60F3 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,7 +107,6 @@
 				FA48BDDD241902950047726B /* Sources */,
 				FA48BDDE241902950047726B /* Frameworks */,
 				FA48BDDF241902950047726B /* Resources */,
-				FA993091241906ED00E08BB0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -1,0 +1,16 @@
+PODS:
+  - RSThemeKit (1.0.0)
+
+DEPENDENCIES:
+  - RSThemeKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RSThemeKit
+
+SPEC CHECKSUMS:
+  RSThemeKit: 4900b31da0fc81dd522dad984d3ff18409234e2c
+
+PODFILE CHECKSUM: 57618afe683a60ff5516c96dea24bf5e702f4c27
+
+COCOAPODS: 1.5.2
