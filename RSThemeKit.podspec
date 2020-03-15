@@ -37,7 +37,7 @@ SOFTWARE.
   s.swift_version = ['4.2', '5.0']
   s.ios.deployment_target = "8.0"
 
-  s.source_files  = "RSThemeKit/**/*.swift"
+  s.source_files  = "Source/RSThemeKit/**/*.swift"
 
 end
 
