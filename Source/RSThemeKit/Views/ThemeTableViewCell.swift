@@ -33,6 +33,8 @@ open class ThemeTableCell: UITableViewCell {
             self.accessoryView = imageView
         case .none:
             break
+        @unknown default:
+            break
         }
         
         selectedBackgroundView = view
