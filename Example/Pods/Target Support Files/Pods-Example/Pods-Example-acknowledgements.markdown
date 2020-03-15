@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## RSThemeKit
 
-                   MIT License
+MIT License
 
 Copyright (c) 2018 Robert Shaginyan
 

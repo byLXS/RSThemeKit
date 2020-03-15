@@ -7,80 +7,143 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D0F76E00A26CA2722CC46177049A704 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D3FE98E9F2D34863BD3F3597A0485A /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68E24CB68E06F0E8A89F993B8801DBB6 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD65E35A3233FBE6F2EFDEB3D43D114 /* Pods-Example-dummy.m */; };
-		EA34CD479D31B960B90922EC48F5E6C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		0DE7F0CE657226B1BBD54772DAF7AD0C /* ThemeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA13034C7C0ED361897922DBF456FCF2 /* ThemeNavigationController.swift */; };
+		1B02B7D4C3581AEA5E6543F388DB40BD /* RSThemeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE097F706F644EA779221A93523FD05C /* RSThemeKit-dummy.m */; };
+		278262439F94A9F139D69C68DCE2B8CF /* RSThemeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AEED22EC162FC91C55589F48218903 /* RSThemeKit-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3BF9F8E0B88CC7B3A96B9E8E833390E7 /* ThemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46DA7D7AFA66D31D404F4686B15FE8 /* ThemeTableViewCell.swift */; };
+		42587D8254A5B3948C2BE613DDC591E5 /* ThemeCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7CEEE0833E5842148299006626431B /* ThemeCodable.swift */; };
+		4E836A6C73892872301CCF16719DEA3E /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2509828596D99F56F126BFE695358482 /* UserDefaults+Extensions.swift */; };
+		5C4CCACBF73F3ADE3D58694272542FB8 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E87B58371462A4B224A6E41B1C67985 /* ThemeModel.swift */; };
+		70B98B3B1B29DC0A0129FAE0C77D63DA /* ThemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989967169F6B1E40C877A03ADD8BDD4 /* ThemeType.swift */; };
+		73FBEA43D6D0BAA48CCC5E986E0AFCED /* ThemeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF20C547D2D02F0740C343B2B71F2DC /* ThemeCollectionView.swift */; };
+		7AAE937015585FECD96A0AC18ED6D80C /* ThemeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57174A54F3DA24B68806EC70B1CBC79 /* ThemeTabBarController.swift */; };
+		82AC9C390E2FEA4AA78A8F85E0C4F90A /* ThemeModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A724BDB483102EEE051C779A8DAF6 /* ThemeModel+Extensions.swift */; };
+		8A0500DAC246331715423064998B72F8 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7DEEBDE6ECFF8A7D6182CD134F77A /* ThemeManager.swift */; };
+		A76B1A9D87BA62D7F386BDE73EF49E3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD46FBC041420035C341CC6342582587 /* UIKit.framework */; };
+		AA8D0BE252F9AD7C5F4E2561BD43448D /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703167630A6FCA818269F86751F643C /* NotificationName+Extensions.swift */; };
+		AC824AE38CCC97B2BC5F614806701817 /* ThemeCodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D201FB29FDB1D1534C3EA6406102A4 /* ThemeCodable+Extensions.swift */; };
+		BB880C1176A7C478DF67A6E169DE673F /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E836952F826DAB74335F631B5357B37 /* Pods-Example-dummy.m */; };
+		C1E8A682917BFBE675DFD6FF302EF457 /* ThemeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175FADD8F624863F56E3BE5166E8557A /* ThemeCollectionCell.swift */; };
+		C4C27FBB8A44FCB60229950435986F19 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF4BAC342F6247C26D866A40E67803A /* UIColor+Extensions.swift */; };
+		CF63D8FCE41E87805B0D076B7104F07C /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 590704EA0ECE325BFC0D8625C4FE4040 /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DB83E2332CD51A1EE23C10616E715FB8 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9F7E91B43873931A45D52E4E49548 /* ThemeViewController.swift */; };
+		E726BD20455A7CC342FD7249F696054B /* ThemeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10805900CCEBE256DC96A2182B7A1A4D /* ThemeTableView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7ACCACFE72D7BAAA7D87D47B293F8B03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA67FAC1151F584BE1E6BE7BE44D56B5;
+			remoteInfo = RSThemeKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		044AA3E23F71470C9B5F50D44720EA0D /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
-		0751B3C0A5DEC132FE3FBD6BCD83D80B /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		11434BC759D12F57876FBB74A4775E74 /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		15D3FE98E9F2D34863BD3F3597A0485A /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
-		1AD65E35A3233FBE6F2EFDEB3D43D114 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
-		25A37D4D536CC5988A439441117C41F4 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
-		3ADE9E5655579DB0F79DC9C80758673C /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3F3EFEBDE6702DEFDFFF9D5C6DBC3773 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5B81C04F8E84EAE60AE15C8695031A5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E836952F826DAB74335F631B5357B37 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
+		10805900CCEBE256DC96A2182B7A1A4D /* ThemeTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeTableView.swift; path = Source/RSThemeKit/Views/ThemeTableView.swift; sourceTree = "<group>"; };
+		169AAA55F49D391B163314B0FAE812B1 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		175FADD8F624863F56E3BE5166E8557A /* ThemeCollectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeCollectionCell.swift; path = Source/RSThemeKit/Views/ThemeCollectionCell.swift; sourceTree = "<group>"; };
+		19CA99DB9E355BE0B52E6ED4621B7003 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		1D7CEEE0833E5842148299006626431B /* ThemeCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeCodable.swift; path = Source/RSThemeKit/Model/ThemeCodable.swift; sourceTree = "<group>"; };
+		24AEED22EC162FC91C55589F48218903 /* RSThemeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RSThemeKit-umbrella.h"; path = "../../Headers/Public/RSThemeKit/RSThemeKit-umbrella.h"; sourceTree = "<group>"; };
+		2509828596D99F56F126BFE695358482 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UserDefaults+Extensions.swift"; path = "Source/RSThemeKit/Extensions/UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		2BDD7FE9FDED70D09E112895C992BFCF /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
+		33F0549EDFB1124D1442CB20F6966231 /* RSThemeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = RSThemeKit.modulemap; path = ../../Headers/Public/RSThemeKit/RSThemeKit.modulemap; sourceTree = "<group>"; };
+		36D201FB29FDB1D1534C3EA6406102A4 /* ThemeCodable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ThemeCodable+Extensions.swift"; path = "Source/RSThemeKit/Extensions/ThemeCodable+Extensions.swift"; sourceTree = "<group>"; };
+		3989967169F6B1E40C877A03ADD8BDD4 /* ThemeType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeType.swift; path = Source/RSThemeKit/Enums/ThemeType.swift; sourceTree = "<group>"; };
+		3A46DA7D7AFA66D31D404F4686B15FE8 /* ThemeTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeTableViewCell.swift; path = Source/RSThemeKit/Views/ThemeTableViewCell.swift; sourceTree = "<group>"; };
+		590704EA0ECE325BFC0D8625C4FE4040 /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
+		5E87B58371462A4B224A6E41B1C67985 /* ThemeModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeModel.swift; path = Source/RSThemeKit/Model/ThemeModel.swift; sourceTree = "<group>"; };
+		645203A9C557B658E065464F51C722DB /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		65410538ED7F411B8BCDAABA89F0873A /* libRSThemeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRSThemeKit.a; path = libRSThemeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		731A724BDB483102EEE051C779A8DAF6 /* ThemeModel+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ThemeModel+Extensions.swift"; path = "Source/RSThemeKit/Extensions/ThemeModel+Extensions.swift"; sourceTree = "<group>"; };
+		77C9F7E91B43873931A45D52E4E49548 /* ThemeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeViewController.swift; path = Source/RSThemeKit/Views/ThemeViewController.swift; sourceTree = "<group>"; };
+		7A97E9B081868CEB54CEA1FCFB53CC4B /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7BF20C547D2D02F0740C343B2B71F2DC /* ThemeCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeCollectionView.swift; path = Source/RSThemeKit/Views/ThemeCollectionView.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9CF72D5D3E462618B8F4E0964259A675 /* RSThemeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSThemeKit.h; path = RSThemeKit/RSThemeKit/RSThemeKit.h; sourceTree = "<group>"; };
-		A79AC23D5A157FED70D9C53D844B2319 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		EFC5B2E05B58CD826FD55659BF1D7E39 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A37C542F440A0140C347701170BF4835 /* RSThemeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSThemeKit.xcconfig; sourceTree = "<group>"; };
+		A809C13E6E20B8DAA4FA2BF3CD5CC103 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
+		ACF7DEEBDE6ECFF8A7D6182CD134F77A /* ThemeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeManager.swift; path = Source/RSThemeKit/Manager/ThemeManager.swift; sourceTree = "<group>"; };
+		DD46FBC041420035C341CC6342582587 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E0AB74DC685C83754FBFFC75BD5AB6C6 /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E57174A54F3DA24B68806EC70B1CBC79 /* ThemeTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeTabBarController.swift; path = Source/RSThemeKit/Views/ThemeTabBarController.swift; sourceTree = "<group>"; };
+		E703167630A6FCA818269F86751F643C /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationName+Extensions.swift"; path = "Source/RSThemeKit/Extensions/NotificationName+Extensions.swift"; sourceTree = "<group>"; };
+		EA13034C7C0ED361897922DBF456FCF2 /* ThemeNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeNavigationController.swift; path = Source/RSThemeKit/Views/ThemeNavigationController.swift; sourceTree = "<group>"; };
+		F1CEE59F5DF217D27D9674998B5CBC14 /* RSThemeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSThemeKit-prefix.pch"; sourceTree = "<group>"; };
+		F499291E9052BE5882ACBEBAAF1C5C6A /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Example.a"; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF4BAC342F6247C26D866A40E67803A /* UIColor+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "Source/RSThemeKit/Extensions/UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		FE097F706F644EA779221A93523FD05C /* RSThemeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSThemeKit-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		10DD2333E8A9AA46AC71417B5B795E5C /* Frameworks */ = {
+		709B6FBE63F5B19CB6CBA8F9EB5D04AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA34CD479D31B960B90922EC48F5E6C0 /* Foundation.framework in Frameworks */,
+				A76B1A9D87BA62D7F386BDE73EF49E3B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3A43C23DBCE8D84DB8CBB9A8273C98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B5ECB992A56AE0C70DC72D88BB90B05 /* Pods-Example */ = {
+		331500D3A150EDB28D2BFC40EADAE0C8 /* RSThemeKit */ = {
 			isa = PBXGroup;
 			children = (
-				5B81C04F8E84EAE60AE15C8695031A5F /* Info.plist */,
-				25A37D4D536CC5988A439441117C41F4 /* Pods-Example.modulemap */,
-				3ADE9E5655579DB0F79DC9C80758673C /* Pods-Example-acknowledgements.markdown */,
-				11434BC759D12F57876FBB74A4775E74 /* Pods-Example-acknowledgements.plist */,
-				1AD65E35A3233FBE6F2EFDEB3D43D114 /* Pods-Example-dummy.m */,
-				3F3EFEBDE6702DEFDFFF9D5C6DBC3773 /* Pods-Example-frameworks.sh */,
-				044AA3E23F71470C9B5F50D44720EA0D /* Pods-Example-resources.sh */,
-				15D3FE98E9F2D34863BD3F3597A0485A /* Pods-Example-umbrella.h */,
-				EFC5B2E05B58CD826FD55659BF1D7E39 /* Pods-Example.debug.xcconfig */,
-				A79AC23D5A157FED70D9C53D844B2319 /* Pods-Example.release.xcconfig */,
+				E703167630A6FCA818269F86751F643C /* NotificationName+Extensions.swift */,
+				1D7CEEE0833E5842148299006626431B /* ThemeCodable.swift */,
+				36D201FB29FDB1D1534C3EA6406102A4 /* ThemeCodable+Extensions.swift */,
+				175FADD8F624863F56E3BE5166E8557A /* ThemeCollectionCell.swift */,
+				7BF20C547D2D02F0740C343B2B71F2DC /* ThemeCollectionView.swift */,
+				ACF7DEEBDE6ECFF8A7D6182CD134F77A /* ThemeManager.swift */,
+				5E87B58371462A4B224A6E41B1C67985 /* ThemeModel.swift */,
+				731A724BDB483102EEE051C779A8DAF6 /* ThemeModel+Extensions.swift */,
+				EA13034C7C0ED361897922DBF456FCF2 /* ThemeNavigationController.swift */,
+				E57174A54F3DA24B68806EC70B1CBC79 /* ThemeTabBarController.swift */,
+				10805900CCEBE256DC96A2182B7A1A4D /* ThemeTableView.swift */,
+				3A46DA7D7AFA66D31D404F4686B15FE8 /* ThemeTableViewCell.swift */,
+				3989967169F6B1E40C877A03ADD8BDD4 /* ThemeType.swift */,
+				77C9F7E91B43873931A45D52E4E49548 /* ThemeViewController.swift */,
+				FBF4BAC342F6247C26D866A40E67803A /* UIColor+Extensions.swift */,
+				2509828596D99F56F126BFE695358482 /* UserDefaults+Extensions.swift */,
+				C2C1B008FAD27E8ECE3820EEFC67225F /* Support Files */,
+			);
+			name = RSThemeKit;
+			path = RSThemeKit;
+			sourceTree = "<group>";
+		};
+		3BFB1236E5F61C24E4383B2E5824E66B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54DFD2DB92505726FACCA7110689BF33 /* Pods-Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		54DFD2DB92505726FACCA7110689BF33 /* Pods-Example */ = {
+			isa = PBXGroup;
+			children = (
+				19CA99DB9E355BE0B52E6ED4621B7003 /* Pods-Example.modulemap */,
+				7A97E9B081868CEB54CEA1FCFB53CC4B /* Pods-Example-acknowledgements.markdown */,
+				E0AB74DC685C83754FBFFC75BD5AB6C6 /* Pods-Example-acknowledgements.plist */,
+				0E836952F826DAB74335F631B5357B37 /* Pods-Example-dummy.m */,
+				A809C13E6E20B8DAA4FA2BF3CD5CC103 /* Pods-Example-frameworks.sh */,
+				2BDD7FE9FDED70D09E112895C992BFCF /* Pods-Example-resources.sh */,
+				590704EA0ECE325BFC0D8625C4FE4040 /* Pods-Example-umbrella.h */,
+				645203A9C557B658E065464F51C722DB /* Pods-Example.debug.xcconfig */,
+				169AAA55F49D391B163314B0FAE812B1 /* Pods-Example.release.xcconfig */,
 			);
 			name = "Pods-Example";
 			path = "Target Support Files/Pods-Example";
-			sourceTree = "<group>";
-		};
-		1B87E3DF000B772FB5E0120055BADD35 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				95C83117FA603BF8C9E8D1230A7FDEAE /* RSThemeKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1B5ECB992A56AE0C70DC72D88BB90B05 /* Pods-Example */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -88,67 +151,115 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				1B87E3DF000B772FB5E0120055BADD35 /* Pods */,
-				84EBB6EAE42D2D0BEDBCA9F98F7B056B /* Products */,
-				6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */,
+				95F0498FA8AF4B4BC10951F766B1526C /* Pods */,
+				B70F3ED1F9D08E7A25DC72085486EBE3 /* Products */,
+				3BFB1236E5F61C24E4383B2E5824E66B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		84EBB6EAE42D2D0BEDBCA9F98F7B056B /* Products */ = {
+		95F0498FA8AF4B4BC10951F766B1526C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0751B3C0A5DEC132FE3FBD6BCD83D80B /* Pods_Example.framework */,
+				331500D3A150EDB28D2BFC40EADAE0C8 /* RSThemeKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B70F3ED1F9D08E7A25DC72085486EBE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F499291E9052BE5882ACBEBAAF1C5C6A /* libPods-Example.a */,
+				65410538ED7F411B8BCDAABA89F0873A /* libRSThemeKit.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		95C83117FA603BF8C9E8D1230A7FDEAE /* RSThemeKit */ = {
-			isa = PBXGroup;
-			children = (
-				9CF72D5D3E462618B8F4E0964259A675 /* RSThemeKit.h */,
-			);
-			name = RSThemeKit;
-			path = RSThemeKit;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				FF5B08143E740C3777FEB0D3A952141C /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2C1B008FAD27E8ECE3820EEFC67225F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				33F0549EDFB1124D1442CB20F6966231 /* RSThemeKit.modulemap */,
+				A37C542F440A0140C347701170BF4835 /* RSThemeKit.xcconfig */,
+				FE097F706F644EA779221A93523FD05C /* RSThemeKit-dummy.m */,
+				F1CEE59F5DF217D27D9674998B5CBC14 /* RSThemeKit-prefix.pch */,
+				24AEED22EC162FC91C55589F48218903 /* RSThemeKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSThemeKit";
+			sourceTree = "<group>";
+		};
+		FF5B08143E740C3777FEB0D3A952141C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD46FBC041420035C341CC6342582587 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B4F360F6C8F7FE2775F9B747D61EE7F7 /* Headers */ = {
+		5B8C249AECDAD3B1300DA6F55632AC06 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D0F76E00A26CA2722CC46177049A704 /* Pods-Example-umbrella.h in Headers */,
+				278262439F94A9F139D69C68DCE2B8CF /* RSThemeKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E111BE08713C95A3F22996E8C7B5B35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF63D8FCE41E87805B0D076B7104F07C /* Pods-Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1D7FEF76ED54B29E84F9DADF1F67F551 /* Pods-Example */ = {
+		44BE7B19D91F5BE53F2824F0313AA35D /* Pods-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85384B61834F7C0807D5E99B885C5D4A /* Build configuration list for PBXNativeTarget "Pods-Example" */;
+			buildConfigurationList = 360BB3627AE14C8C32D3B0C6DE2CAED9 /* Build configuration list for PBXNativeTarget "Pods-Example" */;
 			buildPhases = (
-				E0E159BC4779F701B89835DD816672D5 /* Sources */,
-				10DD2333E8A9AA46AC71417B5B795E5C /* Frameworks */,
-				B4F360F6C8F7FE2775F9B747D61EE7F7 /* Headers */,
+				2F19F47B4FA32FEAC1170B3B742C685E /* Sources */,
+				AD3A43C23DBCE8D84DB8CBB9A8273C98 /* Frameworks */,
+				7E111BE08713C95A3F22996E8C7B5B35 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FC3962D4CE14BBE251CE09FEDA9D51D /* PBXTargetDependency */,
+			);
+			name = "Pods-Example";
+			productName = "Pods-Example";
+			productReference = F499291E9052BE5882ACBEBAAF1C5C6A /* libPods-Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CA67FAC1151F584BE1E6BE7BE44D56B5 /* RSThemeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B855524B117B95B6DDE34F1D4DA71F18 /* Build configuration list for PBXNativeTarget "RSThemeKit" */;
+			buildPhases = (
+				382C765DDCE367B4299FB1A57AB5A23E /* Sources */,
+				709B6FBE63F5B19CB6CBA8F9EB5D04AF /* Frameworks */,
+				5B8C249AECDAD3B1300DA6F55632AC06 /* Headers */,
+				6EB30CAF427D085E0E2726AB84F76233 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Example";
-			productName = "Pods-Example";
-			productReference = 0751B3C0A5DEC132FE3FBD6BCD83D80B /* Pods_Example.framework */;
-			productType = "com.apple.product-type.framework";
+			name = RSThemeKit;
+			productName = RSThemeKit;
+			productReference = 65410538ED7F411B8BCDAABA89F0873A /* libRSThemeKit.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -167,25 +278,83 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 84EBB6EAE42D2D0BEDBCA9F98F7B056B /* Products */;
+			productRefGroup = B70F3ED1F9D08E7A25DC72085486EBE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D7FEF76ED54B29E84F9DADF1F67F551 /* Pods-Example */,
+				44BE7B19D91F5BE53F2824F0313AA35D /* Pods-Example */,
+				CA67FAC1151F584BE1E6BE7BE44D56B5 /* RSThemeKit */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6EB30CAF427D085E0E2726AB84F76233 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/RSThemeKit/RSThemeKit.modulemap",
+				"${PODS_ROOT}/Headers/Public/RSThemeKit/RSThemeKit-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/RSThemeKit-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/RSThemeKit/RSThemeKit.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/RSThemeKit/RSThemeKit-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		E0E159BC4779F701B89835DD816672D5 /* Sources */ = {
+		2F19F47B4FA32FEAC1170B3B742C685E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68E24CB68E06F0E8A89F993B8801DBB6 /* Pods-Example-dummy.m in Sources */,
+				BB880C1176A7C478DF67A6E169DE673F /* Pods-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382C765DDCE367B4299FB1A57AB5A23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8D0BE252F9AD7C5F4E2561BD43448D /* NotificationName+Extensions.swift in Sources */,
+				1B02B7D4C3581AEA5E6543F388DB40BD /* RSThemeKit-dummy.m in Sources */,
+				AC824AE38CCC97B2BC5F614806701817 /* ThemeCodable+Extensions.swift in Sources */,
+				42587D8254A5B3948C2BE613DDC591E5 /* ThemeCodable.swift in Sources */,
+				C1E8A682917BFBE675DFD6FF302EF457 /* ThemeCollectionCell.swift in Sources */,
+				73FBEA43D6D0BAA48CCC5E986E0AFCED /* ThemeCollectionView.swift in Sources */,
+				8A0500DAC246331715423064998B72F8 /* ThemeManager.swift in Sources */,
+				82AC9C390E2FEA4AA78A8F85E0C4F90A /* ThemeModel+Extensions.swift in Sources */,
+				5C4CCACBF73F3ADE3D58694272542FB8 /* ThemeModel.swift in Sources */,
+				0DE7F0CE657226B1BBD54772DAF7AD0C /* ThemeNavigationController.swift in Sources */,
+				7AAE937015585FECD96A0AC18ED6D80C /* ThemeTabBarController.swift in Sources */,
+				E726BD20455A7CC342FD7249F696054B /* ThemeTableView.swift in Sources */,
+				3BF9F8E0B88CC7B3A96B9E8E833390E7 /* ThemeTableViewCell.swift in Sources */,
+				70B98B3B1B29DC0A0129FAE0C77D63DA /* ThemeType.swift in Sources */,
+				DB83E2332CD51A1EE23C10616E715FB8 /* ThemeViewController.swift in Sources */,
+				C4C27FBB8A44FCB60229950435986F19 /* UIColor+Extensions.swift in Sources */,
+				4E836A6C73892872301CCF16719DEA3E /* UserDefaults+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FC3962D4CE14BBE251CE09FEDA9D51D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSThemeKit;
+			target = CA67FAC1151F584BE1E6BE7BE44D56B5 /* RSThemeKit */;
+			targetProxy = 7ACCACFE72D7BAAA7D87D47B293F8B03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */ = {
@@ -251,82 +420,83 @@
 			};
 			name = Debug;
 		};
-		98954AB04A8718A0882DEC39665B783E /* Release */ = {
+		2BBD92621A1B404788EF717AC0797A62 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A79AC23D5A157FED70D9C53D844B2319 /* Pods-Example.release.xcconfig */;
+			baseConfigurationReference = A37C542F440A0140C347701170BF4835 /* RSThemeKit.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				GCC_PREFIX_HEADER = "Target Support Files/RSThemeKit/RSThemeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/RSThemeKit/RSThemeKit.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RSThemeKit;
+				PRODUCT_NAME = RSThemeKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		B7514B3CA05758FCA06BB758D5D70F0D /* Debug */ = {
+		6B4B495E0D91027BFB16660ECC489A8F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFC5B2E05B58CD826FD55659BF1D7E39 /* Pods-Example.debug.xcconfig */;
+			baseConfigurationReference = A37C542F440A0140C347701170BF4835 /* RSThemeKit.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				GCC_PREFIX_HEADER = "Target Support Files/RSThemeKit/RSThemeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/RSThemeKit/RSThemeKit.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RSThemeKit;
+				PRODUCT_NAME = RSThemeKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CBF0374FDE6631809C0FA1D91D48918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 169AAA55F49D391B163314B0FAE812B1 /* Pods-Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		CD8324D57CD462761E218EEA4EA91EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -386,6 +556,31 @@
 			};
 			name = Release;
 		};
+		FB410E26077D3EF7BD0E2FF14F58B09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 645203A9C557B658E065464F51C722DB /* Pods-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -398,11 +593,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85384B61834F7C0807D5E99B885C5D4A /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
+		360BB3627AE14C8C32D3B0C6DE2CAED9 /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7514B3CA05758FCA06BB758D5D70F0D /* Debug */,
-				98954AB04A8718A0882DEC39665B783E /* Release */,
+				FB410E26077D3EF7BD0E2FF14F58B09F /* Debug */,
+				7CBF0374FDE6631809C0FA1D91D48918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B855524B117B95B6DDE34F1D4DA71F18 /* Build configuration list for PBXNativeTarget "RSThemeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4B495E0D91027BFB16660ECC489A8F /* Debug */,
+				2BBD92621A1B404788EF717AC0797A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
