@@ -25,6 +25,59 @@ pod 'RSThemeKit'
 
 If you prefer not to use any of the aforementioned dependency managers, you can integrate `RSThemeKit` into your project manually. Put `Source/RSThemeKit` folder in your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
 
+### Helper files
+
+```swift
+import UIKit
+import RSThemeKit
+
+class TabBarController: ThemeTabBarController {
+}
+
+class NavigationController: ThemeNavigationController {
+}
+
+class ViewController: ThemeViewController {
+
+    var tableView: ThemeTableView!
+    var collectionView: ThemeCollectionView!
+ 
+} 
+```
+
+and ThemeTableCell, ThemeCollectionCell
+
+### Add your custom view:
+
+```swift
+class CustomView: UIView {
+    
+    func addThemeObrserver() {
+        ThemeManager.addThemeObrserver(self, selector: #selector(changedTheme))
+        changedTheme()
+    }
+    
+    @objc func changedTheme() {
+        decorator(theme: ThemeManager.currentTheme)
+    }
+    
+    func decorator(theme: ThemeModel) {
+        backgroundColor = theme.cellBackgroundColor
+    }
+} 
+
+class ViewController: ThemeViewController {
+    
+    let customView = CustomView()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        customView.addThemeObrserver()
+    }
+    
+}
+```
+
 ## Quick Start
 
 inherit your UIViewController from ThemeViewController
