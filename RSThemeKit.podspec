@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "RSThemeKit"
-  s.version       = "1.0.2"
+  s.version       = "1.0.3"
   s.summary       = "Easy implementation of light, dark, and custom themes starting with iOS 8+"
   s.homepage      = "https://github.com/byLXS/RSThemeKit"
   s.source        = { :git => "https://github.com/byLXS/RSThemeKit.git", :tag => s.version }
