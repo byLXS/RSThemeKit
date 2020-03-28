@@ -113,7 +113,7 @@ extension ViewController: UITableViewDataSource {
         
         switch type {
         case .system:
-            breK
+            break
         case .light:
             cell.textLabel?.text = "Light Appearance"
         case .dark:
