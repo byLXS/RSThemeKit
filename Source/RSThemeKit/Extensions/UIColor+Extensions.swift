@@ -1,102 +1,182 @@
 import UIKit
 
-let RSBundle = Bundle(identifier: "rs.RSThemeKit")!
-
 extension UIColor {
     
     static var systemTextColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "textColor", in: RSBundle, compatibleWith: nil) ?? darkColor
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                } else {
+                    return #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                }
+            }
+        } else {
+            return darkColor
         }
-        
-        return darkColor
     }
     
     static var systemTintColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "tintColor", in: RSBundle, compatibleWith: nil) ?? blueLightColor
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    /// Return the color for Dark Mode
+                    return blueDarkColor
+                } else {
+                    /// Return the color for Light Mode
+                    return blueLightColor
+                }
+            }
+        } else {
+            return blueLightColor
         }
-        
-        return blueLightColor
     }
     
     static var systemBackgroundColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "backgroundColor", in: RSBundle, compatibleWith: nil) ?? whiteColor
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return darkColor
+                } else {
+                    return whiteColor
+                }
+            }
+        } else {
+            return whiteColor
         }
-        
-        return whiteColor
     }
     
     static var systemAccessoryTypeViewColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "accessoryTypeViewColor", in: RSBundle, compatibleWith: nil) ?? gray2LightColor
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    /// Return the color for Dark Mode
+                    return gray2DarkColor
+                } else {
+                    /// Return the color for Light Mode
+                    return whiteColor
+                }
+            }
+        } else {
+            return whiteColor
         }
-        
-         return gray2LightColor
     }
     
     static var systemCellBackgroundColor: UIColor {
-        if #available(iOS 13.0, *) {
-            
-            return UIColor(named: "cellBackgroundColor", in: RSBundle, compatibleWith: nil) ?? gray6LightColor
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    /// Return the color for Dark Mode
+                    return gray6DarkColor
+                } else {
+                    /// Return the color for Light Mode
+                    return grayCustomLightColor
+                }
+            }
+        } else {
+            return grayCustomLightColor
         }
-        
-        return gray6LightColor
     }
-    static var systemDetailtTextColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "detailtTextColor", in: RSBundle, compatibleWith: nil) ?? gray2LightColor
+    
+    static var systemDetailTextColor: UIColor {
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    /// Return the color for Dark Mode
+                    return grayDarkColor
+                } else {
+                    /// Return the color for Light Mode
+                    return whiteColor
+                }
+            }
+        } else {
+            return whiteColor
         }
-        
-        return gray2LightColor
     }
+    
     static var systemNavigationBarColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "navigationBarColor", in: RSBundle, compatibleWith: nil) ?? gray6NavigationLightColor
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return darkColor
+                } else {
+                    return gray6LightColor
+                }
+            }
+        } else {
+            return gray6LightColor
         }
-        
-        return gray6NavigationLightColor
     }
     
     static var systemSelectionStyleColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "selectionStyleColor", in: RSBundle, compatibleWith: nil) ?? gray5LightTheme
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return gray5DarkColor
+                } else {
+                    return gray5LightTheme
+                }
+            }
+        } else {
+            return gray5LightTheme
         }
-        
-        return gray5LightTheme
     }
     
     static var systemSwitchBackgroundColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "switchBackgroundColor", in: RSBundle, compatibleWith: nil) ?? gray4LightColor
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return gray4DarkColor
+                } else {
+                    return gray4LightColor
+                }
+            }
+        } else {
+            return gray4LightColor
         }
-        
-        return gray4LightColor
     }
     
     static var systemSwitchTintColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "switchTintColor", in: RSBundle, compatibleWith: nil) ?? greenLightColor
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return greenDarkColor
+                } else {
+                    return greenLightColor
+                }
+            }
+        } else {
+            return greenLightColor
         }
-        
-        return greenLightColor
     }
     
     static var systemTableViewColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "tableViewColor", in: RSBundle, compatibleWith: nil) ?? gray6NavigationLightColor
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return darkColor
+                } else {
+                    return gray6LightColor
+                }
+            }
+        } else {
+            return gray6LightColor
         }
-        
-        return gray6NavigationLightColor
     }
     
     static var systemSeparatorColor: UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor(named: "separatorColor", in: RSBundle, compatibleWith: nil) ?? gray3LightColor
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return graySeparatorDarkColor
+                } else {
+                    return gray3LightColor
+                }
+            }
+        } else {
+            return gray3LightColor
         }
-        
-        return gray3LightColor
+
     }
     
     static var whiteColor: UIColor {
@@ -111,12 +191,12 @@ extension UIColor {
         return UIColor(cgColor: #colorLiteral(red: 0.168627451, green: 0.168627451, blue: 0.1764705882, alpha: 1))
     }
     
-    static var gray6NavigationLightColor: UIColor {
-        return UIColor(cgColor: #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1))
-    }
-    
     static var grayLightColor: UIColor {
         return UIColor(cgColor: #colorLiteral(red: 0.5563083291, green: 0.5570628047, blue: 0.5771192312, alpha: 1))
+    }
+    
+    static var grayDarkColor: UIColor {
+        return UIColor(cgColor: #colorLiteral(red: 0.5568627451, green: 0.5568627451, blue: 0.5764705882, alpha: 1))
     }
     
     static var gray2LightColor: UIColor {
@@ -125,10 +205,6 @@ extension UIColor {
     
     static var gray2DarkColor: UIColor {
         return UIColor(cgColor: #colorLiteral(red: 0.3803921569, green: 0.3764705882, blue: 0.3960784314, alpha: 1))
-    }
-    
-    static var grayDarkColor: UIColor {
-        return UIColor(cgColor: #colorLiteral(red: 0.5490196078, green: 0.5490196078, blue: 0.568627451, alpha: 1))
     }
     
     static var gray3DarkColor: UIColor {
@@ -156,11 +232,15 @@ extension UIColor {
     }
     
     static var gray6LightColor: UIColor {
-        return UIColor(cgColor: #colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.9803921569, alpha: 1))
+        return UIColor(cgColor: #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1))
     }
     
     static var gray6DarkColor: UIColor {
-        return UIColor(cgColor: #colorLiteral(red: 0.1095862761, green: 0.1098804548, blue: 0.1179131344, alpha: 1))
+        return UIColor(cgColor: #colorLiteral(red: 0.1098039216, green: 0.1098039216, blue: 0.1176470588, alpha: 1))
+    }
+    
+    static var grayCustomLightColor: UIColor {
+        return UIColor(cgColor: #colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.9803921569, alpha: 1))
     }
     
     static var blueLightColor: UIColor {
@@ -236,5 +316,16 @@ extension UIColor {
         getRed(&r, green: &g, blue: &b, alpha: &a)
         let rgb:Int = (Int)(r*255)<<16 | (Int)(g*255)<<8 | (Int)(b*255)<<0
         return String(format:"#%06x", rgb)
+    }
+}
+
+extension UIColor {
+    public func as1ptImage() -> UIImage {
+        UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
+        setFill()
+        UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
+        let image = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
+        UIGraphicsEndImageContext()
+        return image
     }
 }

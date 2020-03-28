@@ -24,7 +24,13 @@ open class ThemeNavigationController: UINavigationController {
         decorator(theme: ThemeManager.currentTheme)
     }
     
+    open override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        decorator(theme: ThemeManager.currentTheme)
+    }
+    
     open func decorator(theme: ThemeModel) {
+        navigationBar.shadowImage = theme.separatorColor.as1ptImage()
         navigationBar.tintColor = theme.tintColor
         navigationBar.barTintColor = theme.navigationBarColor
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: theme.textColor]

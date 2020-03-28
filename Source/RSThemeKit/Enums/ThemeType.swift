@@ -60,7 +60,7 @@ public enum ThemeType {
     }
     
     private func getLightTheme() -> ThemeModel {
-        let theme = ThemeModel(identifier: identifier(), textColor: UIColor.darkColor, detailtTextColor: UIColor.gray2LightColor, tintColor: UIColor.blueLightColor, switchTintColor: UIColor.greenLightColor, backgroundColor: UIColor.whiteColor, tableViewColor: UIColor.gray6NavigationLightColor, cellBackgroundColor: UIColor.gray6LightColor, separatorColor: UIColor.gray3LightColor, navigationBarColor: UIColor.gray6NavigationLightColor, statusBarStyle: .default, indicatorStyle: .black, selectionStyleColor: UIColor.gray5LightTheme, accessoryTypeViewColor: UIColor.gray2LightColor, switchBackgroundColor: UIColor.gray4LightColor, keyboardAppearance: .light)
+        let theme = ThemeModel(identifier: identifier(), textColor: UIColor.darkColor, detailtTextColor: UIColor.gray2LightColor, tintColor: UIColor.blueLightColor, switchTintColor: UIColor.greenLightColor, backgroundColor: UIColor.whiteColor, tableViewColor: UIColor.gray6LightColor, cellBackgroundColor: UIColor.whiteColor, separatorColor: UIColor.gray3LightColor, navigationBarColor: UIColor.gray6LightColor, statusBarStyle: .default, indicatorStyle: .black, selectionStyleColor: UIColor.gray5LightTheme, accessoryTypeViewColor: UIColor.gray2LightColor, switchBackgroundColor: UIColor.gray4LightColor, keyboardAppearance: .light)
         return theme
     }
     
@@ -75,7 +75,7 @@ public enum ThemeType {
     }
     
     private func getSystemTheme() -> ThemeModel {
-        let theme = ThemeModel(identifier: identifier(), textColor: UIColor.systemTextColor, detailtTextColor: UIColor.systemDetailtTextColor, tintColor: UIColor.systemTintColor, switchTintColor: UIColor.systemSwitchTintColor, backgroundColor: UIColor.systemBackgroundColor, tableViewColor: UIColor.systemTableViewColor, cellBackgroundColor: UIColor.systemCellBackgroundColor, separatorColor: UIColor.systemSeparatorColor, navigationBarColor: UIColor.systemNavigationBarColor, statusBarStyle: .default, indicatorStyle: .black, selectionStyleColor: UIColor.systemSelectionStyleColor, accessoryTypeViewColor: UIColor.systemAccessoryTypeViewColor, switchBackgroundColor: UIColor.systemSwitchBackgroundColor, keyboardAppearance: .light)
+        let theme = ThemeModel(identifier: identifier(), textColor: UIColor.systemTextColor, detailtTextColor: UIColor.systemDetailTextColor, tintColor: UIColor.systemTintColor, switchTintColor: UIColor.systemSwitchTintColor, backgroundColor: UIColor.systemBackgroundColor, tableViewColor: UIColor.systemTableViewColor, cellBackgroundColor: UIColor.systemCellBackgroundColor, separatorColor: UIColor.systemSeparatorColor, navigationBarColor: UIColor.systemNavigationBarColor, statusBarStyle: .default, indicatorStyle: .black, selectionStyleColor: UIColor.systemSelectionStyleColor, accessoryTypeViewColor: UIColor.systemAccessoryTypeViewColor, switchBackgroundColor: UIColor.systemSwitchBackgroundColor, keyboardAppearance: .light)
         return theme
     }
 }

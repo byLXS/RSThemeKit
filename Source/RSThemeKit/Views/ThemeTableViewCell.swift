@@ -28,7 +28,7 @@ open class ThemeTableCell: UITableViewCell {
         case .checkmark, .detailButton, .detailDisclosureButton:
             tintColor = theme.tintColor
         case .disclosureIndicator:
-            let imageView = UIImageView(image: UIImage(named: "arrow_right_image", in: RSBundle, compatibleWith: nil))
+            let imageView = UIImageView(image: UIImage(named: "arrow_right_image.pdf"))
             imageView.tintColor = theme.accessoryTypeViewColor
             self.accessoryView = imageView
         case .none:
