@@ -128,3 +128,8 @@ extension ViewController: UITableViewDataSource {
     }
 }
 ```
+Setup Theme 
+```swift
+let type = model[indexPath.section][indexPath.row]
+ThemeManager.setTheme(type: type)
+```
