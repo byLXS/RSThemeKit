@@ -55,6 +55,10 @@ extension ViewController: UITableViewDataSource {
         
         if type.identifier() == ThemeManager.currentTheme.identifier {
             cell.accessoryType = .checkmark
+            if !ThemeManager.isSystemTheme, ThemeManager.currentTheme.identifier == "system" {
+                 ThemeManager.isSystemTheme = true
+                 tableView.reloadData()
+            }
         }
         
         switch type {
