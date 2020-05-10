@@ -1,6 +1,8 @@
 # RSThemeKit
 Allows you to quickly and easily set a color theme for your app
 
+<a href="https://github.com/byLXS/RSThemeKit/blob/master/Preview.gif" target="_blank"><img align="left" src="https://github.com/byLXS/RSThemeKit/blob/master/Preview.gif" width="200"/></a>
+
 [![Pod Version](https://img.shields.io/badge/Pod-1.0.3-6193DF.svg)](https://cocoapods.org/)
 ![Swift Version](https://img.shields.io/badge/iOS-8.0+-blue.svg) 
 ![Swift Version](https://img.shields.io/badge/Swift-4.2+-orange.svg)
@@ -125,15 +127,6 @@ class ViewController: ThemeViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
-}
-```
-
-Сreating model for displaying the tableView: 
-
-```swift
-class ViewController: ThemeViewController {
-  
-    var model: [[ThemeType]] = [[.light, .dark]]
 }
 ```
 
