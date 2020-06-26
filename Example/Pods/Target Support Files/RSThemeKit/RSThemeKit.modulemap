@@ -1,0 +1,6 @@
+module RSThemeKit {
+  umbrella header "RSThemeKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
