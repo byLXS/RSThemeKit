@@ -54,7 +54,7 @@ and ThemeTableCell, ThemeCollectionCell, ThemeAlertController
 ```swift
 class CustomView: UIView {
     
-    func addThemeObrserver() {
+    func addThemeObserver() {
         ThemeManager.addThemeObserver(self, selector: #selector(changedTheme))
         changedTheme()
     }
