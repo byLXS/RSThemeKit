@@ -25,4 +25,5 @@ struct ThemeCodable: Codable {
     let accessoryTypeViewColor: String
     let switchBackgroundColor: String
     let keyboardAppearance: Int
+    let blurEffect: Int
 }

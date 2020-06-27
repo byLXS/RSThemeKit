@@ -4,11 +4,11 @@ open class ThemeNavigationController: UINavigationController {
     
     override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        addThemeObrserver()
+        addThemeObserver()
     }
     
-    public func addThemeObrserver() {
-        ThemeManager.addThemeObrserver(self, selector: #selector(changedTheme))
+    public func addThemeObserver() {
+        ThemeManager.addThemeObserver(self, selector: #selector(changedTheme))
         changedTheme()
     }
 

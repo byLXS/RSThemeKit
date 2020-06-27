@@ -20,10 +20,8 @@ extension UIColor {
         if #available(iOS 13, *) {
             return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
                 if UITraitCollection.userInterfaceStyle == .dark {
-                    /// Return the color for Dark Mode
                     return blueDarkColor
                 } else {
-                    /// Return the color for Light Mode
                     return blueLightColor
                 }
             }
@@ -50,10 +48,8 @@ extension UIColor {
         if #available(iOS 13, *) {
             return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
                 if UITraitCollection.userInterfaceStyle == .dark {
-                    /// Return the color for Dark Mode
                     return gray2DarkColor
                 } else {
-                    /// Return the color for Light Mode
                     return whiteColor
                 }
             }
@@ -66,10 +62,8 @@ extension UIColor {
         if #available(iOS 13, *) {
             return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
                 if UITraitCollection.userInterfaceStyle == .dark {
-                    /// Return the color for Dark Mode
                     return gray6DarkColor
                 } else {
-                    /// Return the color for Light Mode
                     return grayCustomLightColor
                 }
             }
@@ -82,10 +76,8 @@ extension UIColor {
         if #available(iOS 13, *) {
             return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
                 if UITraitCollection.userInterfaceStyle == .dark {
-                    /// Return the color for Dark Mode
                     return grayDarkColor
                 } else {
-                    /// Return the color for Light Mode
                     return whiteColor
                 }
             }

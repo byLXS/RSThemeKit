@@ -4,11 +4,11 @@ open class ThemeTableCell: UITableViewCell {
 
     override public func awakeFromNib() {
         super.awakeFromNib()
-        addThemeObrserver()
+        addThemeObserver()
     }
     
-    public func addThemeObrserver() {
-        ThemeManager.addThemeObrserver(self, selector: #selector(changedTheme))
+    public func addThemeObserver() {
+        ThemeManager.addThemeObserver(self, selector: #selector(changedTheme))
         changedTheme()
     }
 

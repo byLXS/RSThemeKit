@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA7A34A5242F9B0700DFE901 /* arrow_right_image.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA7A34A4242F9B0700DFE901 /* arrow_right_image.pdf */; };
+		FAE527B724A6A57000DE8E6C /* ThemeAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE527B624A6A57000DE8E6C /* ThemeAlertController.swift */; };
 		FAF03458241A60BB00D824D0 /* RSThemeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF0343C241A60BB00D824D0 /* RSThemeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF0345A241A60BB00D824D0 /* ThemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03441241A60BB00D824D0 /* ThemeType.swift */; };
 		FAF0345B241A60BB00D824D0 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03443241A60BB00D824D0 /* UIColor+Extensions.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		E1428775240C595700D15B0E /* RSThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7A34A4242F9B0700DFE901 /* arrow_right_image.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = arrow_right_image.pdf; sourceTree = "<group>"; };
+		FAE527B624A6A57000DE8E6C /* ThemeAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeAlertController.swift; sourceTree = "<group>"; };
 		FAF0343C241A60BB00D824D0 /* RSThemeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSThemeKit.h; sourceTree = "<group>"; };
 		FAF0343D241A60BB00D824D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF03441241A60BB00D824D0 /* ThemeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeType.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				FAF03455241A60BB00D824D0 /* ThemeCollectionView.swift */,
 				FAF03456241A60BB00D824D0 /* ThemeNavigationController.swift */,
 				FAF03457241A60BB00D824D0 /* ThemeTabBarController.swift */,
+				FAE527B624A6A57000DE8E6C /* ThemeAlertController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				FAF03465241A60BB00D824D0 /* ThemeTableViewCell.swift in Sources */,
 				FAF03466241A60BB00D824D0 /* ThemeCollectionCell.swift in Sources */,
 				FAF0345D241A60BB00D824D0 /* UserDefaults+Extensions.swift in Sources */,
+				FAE527B724A6A57000DE8E6C /* ThemeAlertController.swift in Sources */,
 				FAF03467241A60BB00D824D0 /* ThemeViewController.swift in Sources */,
 				FAF0345E241A60BB00D824D0 /* NotificationName+Extensions.swift in Sources */,
 				FAF0346B241A60BB00D824D0 /* ThemeTabBarController.swift in Sources */,

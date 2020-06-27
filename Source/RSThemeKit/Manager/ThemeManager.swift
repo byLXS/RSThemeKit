@@ -74,7 +74,7 @@ public class ThemeManager {
         }
     }
     
-    static func addThemeObrserver(_ observer: Any, selector: Selector) {
+    static public func addThemeObserver(_ observer: Any, selector: Selector) {
         NotificationCenter.default.addObserver(observer, selector: selector, name: .themeUpdated, object: nil)
     }
 }

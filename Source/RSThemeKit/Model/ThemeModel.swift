@@ -18,8 +18,9 @@ public struct ThemeModel {
     public let accessoryTypeViewColor: UIColor
     public let switchBackgroundColor: UIColor
     public let keyboardAppearance: UIKeyboardAppearance
+    public let blurEffect: UIBlurEffect
     
-    public init(identifier: String, textColor: UIColor, detailtTextColor: UIColor, tintColor: UIColor, switchTintColor: UIColor, backgroundColor: UIColor, tableViewColor: UIColor, cellBackgroundColor: UIColor, separatorColor: UIColor, navigationBarColor: UIColor, statusBarStyle: UIStatusBarStyle, indicatorStyle: UIScrollView.IndicatorStyle, selectionStyleColor: UIColor, accessoryTypeViewColor: UIColor, switchBackgroundColor: UIColor, keyboardAppearance: UIKeyboardAppearance) {
+    public init(identifier: String, textColor: UIColor, detailtTextColor: UIColor, tintColor: UIColor, switchTintColor: UIColor, backgroundColor: UIColor, tableViewColor: UIColor, cellBackgroundColor: UIColor, separatorColor: UIColor, navigationBarColor: UIColor, statusBarStyle: UIStatusBarStyle, indicatorStyle: UIScrollView.IndicatorStyle, selectionStyleColor: UIColor, accessoryTypeViewColor: UIColor, switchBackgroundColor: UIColor, keyboardAppearance: UIKeyboardAppearance, blurEffect: UIBlurEffect) {
         self.identifier = identifier
         self.textColor = textColor
         self.detailtTextColor = detailtTextColor
@@ -36,6 +37,6 @@ public struct ThemeModel {
         self.accessoryTypeViewColor = accessoryTypeViewColor
         self.switchBackgroundColor = switchBackgroundColor
         self.keyboardAppearance = keyboardAppearance
+        self.blurEffect = blurEffect
     }
 }
-
