@@ -47,7 +47,7 @@ class ViewController: ThemeViewController {
 } 
 ```
 
-and ThemeTableCell, ThemeCollectionCell
+and ThemeTableCell, ThemeCollectionCell, ThemeAlertController
 
 ### Add your custom view:
 
@@ -55,7 +55,7 @@ and ThemeTableCell, ThemeCollectionCell
 class CustomView: UIView {
     
     func addThemeObrserver() {
-        ThemeManager.addThemeObrserver(self, selector: #selector(changedTheme))
+        ThemeManager.addThemeObserver(self, selector: #selector(changedTheme))
         changedTheme()
     }
     
@@ -74,7 +74,7 @@ class ViewController: ThemeViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        customView.addThemeObrserver()
+        customView.addThemeObserver()
     }
     
 }
@@ -122,7 +122,7 @@ class ViewController: ThemeViewController {
     
     private func setupTableView() {
         tableView = ThemeTableView(frame: self.view.frame, style: .grouped)
-        tableView.addThemeObrserver()
+        tableView.addThemeObserver()
         self.view.addSubview(tableView)
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -130,52 +130,14 @@ class ViewController: ThemeViewController {
 }
 ```
 
-Add `addThemeObrserver` for ThemeTableCell
+Add `addThemeObserver` for ThemeTableCell
 
 ```swift
 let cell = ThemeTableCell()
-cell.addThemeObrserver()
+cell.addThemeObserver()
 ```
 
-```swift
-extension ViewController: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return model.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model[section].count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = ThemeTableCell()
-        cell.addThemeObrserver()
-        let type = model[indexPath.section][indexPath.row]
-        
-        if type.identifier() == ThemeManager.currentTheme.identifier {
-            cell.accessoryType = .checkmark
-        }
-        
-        switch type {
-        case .system:
-            break
-        case .light:
-            cell.textLabel?.text = "Light Appearance"
-        case .dark:
-            cell.textLabel?.text = "Dark Appearance"
-        case .tintedNight:
-            cell.textLabel?.text = "Tinted Night Appearance"
-        case .custom( _):
-            cell.textLabel?.text = "Custom"
-        }
-        
-        return cell
-    }
-}
-```
 Setup Theme 
 ```swift
-let type = model[indexPath.section][indexPath.row]
-ThemeManager.setTheme(type: type)
+ThemeManager.setTheme(type: .dark)
 ```
